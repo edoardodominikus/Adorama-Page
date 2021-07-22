@@ -22,6 +22,12 @@ module.exports = {
             "sass-loader",
           ],
         },
+        {
+          test: /\.(woff|woff2|eot|ttf|svg|jpg|png)$/,
+          use: {
+            loader: 'url-loader',
+          },
+        },
       ],
     },
     watch: true,

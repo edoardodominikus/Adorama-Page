@@ -1,0 +1,21 @@
+.navbar{
+ 
+  .icon{
+    width: 17px;
+    background: url(./images/icon.png);
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  li{
+    margin-right: 30px;
+    list-style: none;
+   
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}

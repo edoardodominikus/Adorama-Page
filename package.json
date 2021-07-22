@@ -1,0 +1,33 @@
+{
+  "name": "Apple-Page",
+  "version": "1.0.0",
+  "description": "The purpose of this page is to copy the apple official website.\r Practice using html,css,javascript.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edoardodominikus/Apple-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edoardodominikus/Apple-Page/issues"
+  },
+  "homepage": "https://github.com/edoardodominikus/Apple-Page#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

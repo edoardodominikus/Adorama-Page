@@ -1,8 +1,10 @@
+*{outline:1px solid #f00;}
 .navbar{
  
   .icon{
     width: 17px;
-    background: url(./images/icon.png);
+    background-image: url(../../dist/img/icon.png);
+    
   }
   ul{
     display: flex;
@@ -18,4 +20,8 @@
     text-decoration: none;
     color: black;
   }
+}
+
+.test{
+  // background: url(apple.png);
 }

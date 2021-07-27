@@ -1,27 +1,171 @@
-*{outline:1px solid #f00;}
-.navbar{
- 
-  .icon{
-    width: 17px;
-    background-image: url(../../dist/img/icon.png);
-    
+//*{outline:1px solid #f00;}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  font-family: 'Lato', sans-serif;
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.dropdown{
+  position:relative;
+  &:hover > ul{
+    display: block !important;
   }
+}
+
+
+.navbar{
   ul{
     display: flex;
     flex-direction: row;
-    
   }
   li{
     margin-right: 30px;
     list-style: none;
-   
   }
   a{
     text-decoration: none;
     color: black;
   }
+
+  .navbar-top{
+    display:flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    ul{
+      display: flex;
+      flex-direction: row;
+    }
+    li{
+      padding: 5px 0 5px 0px;
+    }
+    a{
+      font-size: 12px;
+      padding: 8px 10px;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      color: #06c;
+      white-space: nowrap;
+    }
+    .dropdown--adorama-business-content{
+      display: none;
+      top: 30px;
+      position: relative;
+      z-index: 10;
+      height: auto;
+      box-shadow: 2px 4px 9px rgba(0,0,0,.329);
+      border-radius: 5px;
+      position: absolute;
+      flex-direction: column;
+      background-color: white;
+      width: 170px;
+      li{
+        width: 100%;
+        line-height: normal;
+        &:hover{
+          background: #f2f2f2;
+          color: #06c;
+          border-radius: 3px;
+        }
+      }
+      a{
+        text-transform: capitalize;
+        color:#003e7e;
+        width: 100%;
+        white-space: nowrap;
+      }
+  }
+    .right{
+      a{
+        text-transform: capitalize;
+      }
+      .icon--phone, .icon--chat-bubble, .icon--info{
+      width: 15px;
+      height: 15px;
+      margin-right: 3px;
+      stroke: none;
+      fill:currentColor;
+      }
+      .dropdown--adorama-business-content{
+        right:5px;
+      }
+    }
+    
+  }
+  .navbar-mid
+  {
+    background-color: #003e7e;
+    color: white; 
+    padding: 10px;
+    #icon--adorama-logo{
+      height: 100%;
+      width: 200px;
+      fill: white;
+    }
+    a{
+      color:white;
+    }
+    .tagline{
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-decoration: none;
+      align-self: flex-end;
+      text-transform: uppercase;
+    }
+    .desktop_form{
+      padding: 5px 5px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 505px;
+      height: 32px;
+          .search_bar{
+            width: 100%;
+            
+            position: relative;
+            align-self: flex-end;
+            .search_input{
+              border: 1px solid;
+              border-radius: 60px;
+              width: 100%;
+              height: 26px;
+              line-height: normal;
+              justify-content: center;
+              align-items: center;
+          }
+          .submit_button{
+            width: 18px;
+            height: 18px;
+            box-shadow: none;
+            position: absolute;
+            right: 12px;
+            top: 4px;
+            align-items: center;
+              .icon--magnifier {
+                stroke: none;
+                color: #004387;
+                width: 18px;
+                height: 18px;          
+                fill:currentColor;
+                background-color: white;
+            }
+          }      
+        }
+        ::placeholder{
+          padding: 10px;
+          font-size: 17px;
+          opacity: 0.5;
+        }
+    
+    }
+    
+  }
+
+
 }
 
-.test{
-  // background: url(apple.png);
-}

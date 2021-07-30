@@ -1,7 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   
@@ -22,7 +22,7 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    port: 8888,
+    port: 9999,
   },
   resolve: { extensions: ['.js', '.jsx'] },
   module: {
@@ -46,7 +46,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(scss)$/,
+        test: /\.(scss|css)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -88,10 +88,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/index.css',
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 8889,
-      proxy: 'http://localhost:8888/'
+      proxy: 'http://localhost:9999/'
     })
   ],
 };

@@ -1,15 +1,28 @@
-import './css-src/index.scss'
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import './css-src/index.scss'
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import 'owl.carousel';
+import $ from "jquery";
 import 'owl.carousel';
 
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        
+const owlTopBanner = {
+  init(){
+    const carouselArea = $('.banner-hero-carousel');
+    console.log(carouselArea)
+    if(carouselArea.length > 0){
+      console.log('test')
+      carouselArea.each((index, ele) => {
+        owlTopBanner.initOwlcarousel($(ele));
+      });
+    };
+  },
+  initOwlcarousel(parentElement){
+    const owlItem = Number(parentElement.attr('data-item')) || 1;
+    parentElement.owlCarousel({
         loop:true,
         margin:10,
-        items:1,
+        items: owlItem,
         nav:true,
         dots:true,
         dotsEach:true,
@@ -33,7 +46,15 @@ $(document).ready(function(){
         //     }
         // }
     });
-  });
+  }
+};
+
+
+
+
+$(document).ready(function(){
+  owlTopBanner.init();
+});
 
 
 console.log('test');

@@ -49,11 +49,148 @@ const owlTopBanner = {
   }
 };
 
+const owlMidBanner = {
+  init(){
+    const carouselArea = $('.grid-item-carousel');
+    console.log(carouselArea)
+    if(carouselArea.length > 0){
+      console.log('test')
+      carouselArea.each((index, ele) => {
+        owlMidBanner.initOwlcarousel($(ele));
+      });
+    };
+  },
+  initOwlcarousel(parentElement){
+    const owlItem = Number(parentElement.attr('data-item')) || 1;
+    parentElement.owlCarousel({
+        loop:false,
+        margin:20,
+        items: owlItem,
+        nav:false,
+        dots:false,
+        dotsEach:false,
+        // autoplay:false,
+        // autoplayTimeout:5000,
+        // autoplayHoverPause:true,
+        // responsiveClass:true,
+        // responsive:{
+        //     0:{
+        //         items:1,
+        //         nav:true
+        //     },
+        //     600:{
+        //         items:3,
+        //         nav:false
+        //     },
+        //     1000:{
+        //         items:5,
+        //         nav:true,
+        //         loop:true,
+        //     }
+        // }
+    });
+  }
+}
+
+const owlBrandBanner = {
+  init(){
+    const carouselArea = $('.brands-item-carousel');
+    console.log(carouselArea)
+    if(carouselArea.length > 0){
+      console.log('test')
+      carouselArea.each((index, ele) => {
+        owlBrandBanner.initOwlcarousel($(ele));
+      });
+    };
+  },
+  initOwlcarousel(parentElement){
+    const owlItem = Number(parentElement.attr('data-item')) || 1;
+    parentElement.owlCarousel({
+        loop:false,
+        margin:20,
+        items: owlItem,
+        nav:true,
+        dots:true,
+        dotsEach:8,
+        // autoplay:false,
+        // autoplayTimeout:5000,
+        // autoplayHoverPause:true,
+        // responsiveClass:true,
+        // responsive:{
+        //     0:{
+        //         items:1,
+        //         nav:true
+        //     },
+        //     600:{
+        //         items:3,
+        //         nav:false
+        //     },
+        //     1000:{
+        //         items:5,
+        //         nav:true,
+        //         loop:true,
+        //     }
+        // }
+    });
+  }
+}
+
+const owlBottomBanner = {
+  init(){
+    const carouselArea = $('.video-item-carousel');
+    console.log(carouselArea)
+    if(carouselArea.length > 0){
+      console.log('test')
+      carouselArea.each((index, ele) => {
+        owlBottomBanner.initOwlcarousel($(ele));
+      });
+    };
+  },
+  initOwlcarousel(parentElement){
+    const owlItem = Number(parentElement.attr('data-item')) || 1;
+    parentElement.owlCarousel({
+        loop:false,
+        margin:20,
+        items: owlItem,
+        nav:true,
+        dots:true,
+        dotsEach:4,
+        // autoplay:false,
+        // autoplayTimeout:5000,
+        // autoplayHoverPause:true,
+        // responsiveClass:true,
+        // responsive:{
+        //     0:{
+        //         items:1,
+        //         nav:true
+        //     },
+        //     600:{
+        //         items:3,
+        //         nav:false
+        //     },
+        //     1000:{
+        //         items:5,
+        //         nav:true,
+        //         loop:true,
+        //     }
+        // }
+    });
+  }
+}
+
+
+
+
+
+
 
 
 
 $(document).ready(function(){
   owlTopBanner.init();
+  owlMidBanner.init();
+  owlBrandBanner.init();
+  owlBottomBanner.init();
 });
 
 

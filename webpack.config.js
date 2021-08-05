@@ -8,7 +8,8 @@ module.exports = {
   entry: [
     '@babel/polyfill', 
     './src/index.js',
-    "./src/css-src/index.scss"
+    "./src/css-src/index.scss",
+    "./src/css-src/default.scss"
 
   ],
   output: {

@@ -4,32 +4,124 @@ $small-screens : 769px;
 $big-screens: 1025px;
 $extra-large-screens: 1201px;
 
-@media only screen and (min-width: $extra-large-screens ) //desktop,large screens
+@media only screen and (min-width:$mobile-devices) and (max-width:$small-screens)
 {
-
     .navbar{
         .navbar-top{
-            .navbar-top-size{
-                //width: 100%;
-                // .left{
-                //     padding-left: 50px;
-                // }
-                // .right{
-                //     padding-right: 70px;
-                // }
-            }
+        display:none;
+        } 
+        .navbar-mid{
+            height: 39px;
+         .navbar-mid-size{
+             #icon--adorama-logo{
+                 width: 115px;
+             }
+             .tagline{
+                 display: none;
+             }
+             .desktop_form{
+                 display: none;
+             }
+         }
         }
     }
-    
-    
+   .promo_banner{
+       flex-direction: column;
+       .live_in_wild, .wedding_season{
+           width: 100%;
+           padding: 15px;
+       }
+   }
+   .mid{
+       margin-top: 250px;
+       .categories 
+       {
+           .grid{
+           flex-wrap: nowrap;
+           
+           a{
+               .image_categories{
+                width: 90px;
+                height: 90px;
+               }
+               img{
+                   height: 60px;
+                   width: 60px;
+               }
+           }
+       }
+       }
+       .sale{
+           grid-template-columns: none;
+           .box{
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               
+           }
+       }
+       .featured_brands{
+           padding: 15px;
+           .title{
+               display: flex;
+               flex-direction: column;
+               h2{
+                   font-size: 30px;
+               }
+           }
+           .hero-item-list{
+               .item-background{
+                   width: 90px;
+                   height: 90px;
+               }
+           }
+       }
+       .video{
+           padding: 15px;
+           .title{
+               display: flex;
+               flex-direction: column;
+               h2
+               {
+                font-size: 30px;
+                line-height: 1;
+                font-weight: 400;
+               }
+           }
+       }
+   }
 }
-@media only screen and (min-width: $big-screens) and (max-width: $extra-large-screens) //desktop,large screens
-{
-    .navbar-top-size{
-        width: 100%;
-    }
-    // .navbar .navbar-top .navbar-top-size a{
-    //     font-size: 20px;
-    // }
+
+
+
+
+
+
+// @media only screen and (min-width: $extra-large-screens ) //desktop,large screens
+// {
+
+//     .navbar{
+//         .navbar-top{
+//             .navbar-top-size{
+//                 //width: 100%;
+//                 // .left{
+//                 //     padding-left: 50px;
+//                 // }
+//                 // .right{
+//                 //     padding-right: 70px;
+//                 // }
+//             }
+//         }
+//     }
     
-}
+    
+// }
+// @media only screen and (min-width: $big-screens) and (max-width: $extra-large-screens) //desktop,large screens
+// {
+//     .navbar-top-size{
+//         width: 100%;
+//     }
+//     // .navbar .navbar-top .navbar-top-size a{
+//     //     font-size: 20px;
+//     // }
+    
+// }

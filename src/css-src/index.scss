@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url(../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css);
 @import url(../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css);
+
+$light-blue:#06c; 
+$dark-blue:#003e7e;
+$white: #FFFFFF;
+$light-gray:#f3f3f3;
+$gray: #757575;
+
+
 *{
   font-family: 'Lato', sans-serif;
   margin:0;
@@ -62,7 +70,7 @@
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        color: #06c;
+        color: $light-blue;
         white-space: nowrap;
       }
       .dropdown--adorama-business-content{
@@ -75,20 +83,20 @@
         border-radius: 5px;
         position: absolute;
         flex-direction: column;
-        background-color: white;
+        background-color: $white;
         width: 170px;
         li{
           width: 100%;
           line-height: normal;
           &:hover{
-            background: #f2f2f2;
-            color: #06c;
+            background: $white;
+            color: $light-blue;
             border-radius: 3px;
           }
         }
         a{
           text-transform: capitalize;
-          color:#003e7e;
+          color:$dark-blue;
           width: 100%;
           white-space: nowrap;
         }
@@ -99,6 +107,10 @@
       .right{
         display: flex;
         justify-content: flex-end;
+        li{
+          margin-right: 5px;
+          margin-left: 20px;
+        }
         a{
           text-transform: capitalize;
         }
@@ -113,9 +125,9 @@
   .navbar-mid
   {
     //max-width: 2600px;
-    background-color: #003e7e;
+    background-color: $dark-blue;
     height: 70px;
-    color: white; 
+    color: $white; 
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -131,7 +143,7 @@
         #icon--adorama-logo{
         height: 100%;
         width: 200px;
-        fill: white;
+        fill: $white;
         //padding-left: 12px;
         
       }
@@ -181,7 +193,7 @@
               align-items: center;
                 .icon--magnifier {
                   stroke: none;
-                  color: #004387;
+                  color: $dark-blue;
                   width: 18px;
                   height: 18px;          
                   fill:currentColor;
@@ -233,8 +245,8 @@
               align-items: center;
               justify-content: center;
               &:hover{
-                background: #f2f2f2;
-                color: #06c;
+                background: $light-gray;
+                color: $light-blue;
                 border-radius: 3px;
               }
             }
@@ -242,7 +254,7 @@
               display:block;
               //margin: 10px auto;
               text-transform: capitalize;
-              color:#003e7e;
+              color:$dark-blue;
               width: 100%;
               white-space: nowrap;
               font-size: 12px;
@@ -260,7 +272,7 @@
             }
             .create_account{
               text-align: center;
-              color: #06c;
+              color: $light-blue;
               &:hover{
                 text-decoration: underline;
               }
@@ -293,7 +305,7 @@
   .navbar-bottom{
    
     
-    background-color: #003e7e;
+    background-color: $dark-blue;
     border-top: 1px solid lightgray;
     border-style: groove;
    
@@ -303,6 +315,7 @@
       margin: 0 auto;
       display: flex;
       flex: row;
+      padding: 0 15px;
       justify-content: space-between; 
       a{
         color:white;
@@ -321,6 +334,8 @@
         height: 35px;
      
         li{
+          margin-right: 0;
+          margin-left: 25px;
           height: inherit;
           display: flex;
           align-items: center;
@@ -328,7 +343,7 @@
             border-top: 2px solid white;
           }
           a{
-            text-align: center;
+            text-align: right;
           }
         }
       }
@@ -419,7 +434,7 @@
   }
 }
 .mid{
-  background-color: #f3f3f3;
+  background-color:$light-gray;
     .categories{
     width: 100%;
     height: calc(100%+50px);
@@ -454,6 +469,8 @@
         h4{
           padding-top: 20px;
           font-weight: 200;
+          font-size: 18px;
+          color:$light-blue;
         }
         .image_categories{
           
@@ -505,13 +522,14 @@
           font-size: 12px;
           float: left;
         }
-        }
-        a{
-          padding-left: 5px;
-          margin: 10px 0;
+        .shop-now{
+          
+          padding: 30px 0;
           text-decoration: none;
           font-size: 12px;
         }
+        }
+        
         .box{
           display: flex;
           flex-direction: column;
@@ -522,6 +540,7 @@
     padding-left: 10px;
     max-width: 1400px;
     margin: 0 auto;
+    padding-top: 30px;
     .owl-prev {
       width: 15px;
       height: 100px;
@@ -579,7 +598,7 @@
         }
         a{
           text-decoration: none;
-          color:#06c;
+          color:$light-blue;
           text-align: left;
           margin: 3px 0 0 0;
           left: 10px;
@@ -697,7 +716,7 @@
     
   }
   .featured_brands{
-    padding: 40px 5px 5px 0;
+    padding: 40px 15px 5px 15px;
     max-width: 1400px;
     margin: 0 auto;
     .title{
@@ -705,7 +724,7 @@
       justify-content: space-between;
       h2{
       font-weight: 300;
-      font-size: 22px;
+      font-size: 30px;
       }
       a{
         font-size: 14px;
@@ -791,7 +810,7 @@
     }
   }
   .video{
-    padding: 40px 5px 5px 0;
+    padding: 40px 15px 5px 15px;
     max-width: 1400px;
     margin: 0 auto;
     .title{
@@ -799,7 +818,7 @@
       justify-content: space-between;
       h2{
       font-weight: 300;
-      font-size: 22px;
+      font-size: 30px;
       }
       a{
         font-size: 14px;
@@ -889,7 +908,7 @@
     }
   }
   .news_reviews{
-    padding: 40px 5px 5px 0;
+    padding: 40px 15px 5px 15px;
     max-width: 1400px;
     margin: 0 auto;
     .title{
@@ -897,7 +916,7 @@
       justify-content: space-between;
       h2{
       font-weight: 300;
-      font-size: 22px;
+      font-size: 30px;
       }
       a{
         font-size: 14px;
@@ -985,7 +1004,203 @@
 
   }
 }
+.company-motto{
+  padding: 72px 20px;
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  
+  h1,h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto 10px;
+  }
+  p{
+    line-height: 1.3;
+    font-size: 14px;
+    color:$gray ;
+  }
+  a{
+    text-decoration: none;
+  }
+  .bottom-motto{
+    padding-top: 30px;
+  }
+}
+.footer{
+  .footer-size{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .footer-promo{
+    background-color: $dark-blue;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px 0;
+    a{
+      color:white;
+    }
+  }
+  .footer-connect{
+    width: 100%;
+    padding: 40px 0;
+    background-color: $light-gray;
+    .footer-size{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      a{
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        font-size: 24px;
+      }
+    }
+  }
+  .footer-contact{
+    background-color:$white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 40px 0 80px;
+    .connect, .blog, .newsletter{
+     
+      .footer-title{
+        h4{
+          padding: 20px;
+          
+        }
+        a{
+          color:$light-blue;
+          text-decoration: none;
+        }
+      }
+      h4{
+        font-weight: 700;
+      }
+    }
 
+    .connect{
+      .sosmed{
+        padding-top: 20px;
+        .footer-connect-social{
+          .footer-social-links{
+            i{
+              color:#798794;
+              padding: 15px;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+    .blog{
+      .footer-blog-latest{
+        padding-top: 15px;
+      }
+    }
+    .newsletter{
+      .footer-email-signup  {
+        padding-top: 15px;
+        width: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        input[type=email]{
+          flex-basis: 70%;
+          flex: 1;
+          font-size: 16px;
+          line-height: 1;
+          height: 42px;
+          border-radius: 4px 0 0 4px;
+          border: 1px solid #798794;
+          border-right: 0;
+        }
+        
+        button{
+          font-size: 16px;
+          height: 42px;
+          background: $dark-blue;
+          color:$white;
+          border-radius: 0 4px 4px 0;
+          padding: 0 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .footer-explore{
+    padding: 0 25px;
+    background-color: $light-gray;
+    .footer-size{
+      .explore-links{
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        h4{
+          padding: 10px 0;
+          font-size: 21px;
+          font-weight: 600;
+        }
+        a{
+          text-decoration: none;
+          font-size: 18px;
+          color: $light-blue;
+        }
+        .more-services{
+          padding-top: 30px;
+        }
+      }
+      .explore-block{
+        display: flex;
+        flex-direction: column;
+      }
+      .visit{
+        padding: 20px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .observed{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        img{
+          padding-left: 10px;
+        }
+        .trusted-site{
+          width: 100px; 
+          height: 41px; 
+          display: inline-block; 
+          background-image: url("https://cdn.ywxi.net/meter/adorama.com/202.svg?ts=1627955532492&l=en-US"); 
+          background-size: contain; 
+          background-position: center top; 
+          background-repeat: no-repeat; 
+          cursor: pointer;
+        }
+      }
+    }
+    
+    
+  }
+  .footer-about{
+    background-color: $dark-blue;
+    color: $white;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    
+    a{
+      color: $white;
+    }
+  }
+
+
+}
 
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: inherit;
@@ -1008,7 +1223,7 @@
   height: 9px;
   margin-left: 6px;
   color: inherit;
-  fill: #fff;
+  fill: currentColor;
   stroke: none;
   opacity: .8;
   transition: transform 0s ease;

@@ -73,21 +73,16 @@ const owlMidBanner = {
         // autoplayTimeout:5000,
         // autoplayHoverPause:true,
         // responsiveClass:true,
-        // responsive:{
-        //     0:{
-        //         items:1,
-        //         nav:true
-        //     },
-        //     600:{
-        //         items:3,
-        //         nav:false
-        //     },
-        //     1000:{
-        //         items:5,
-        //         nav:true,
-        //         loop:true,
-        //     }
-        // }
+        responsive:{
+            0:{
+                items:2,
+                nav:true,
+                dots:true,
+            },
+            768:{
+                item: 5,
+            }
+        }
     });
   }
 }
@@ -116,21 +111,18 @@ const owlBrandBanner = {
         // autoplayTimeout:5000,
         // autoplayHoverPause:true,
         // responsiveClass:true,
-        // responsive:{
-        //     0:{
-        //         items:1,
-        //         nav:true
-        //     },
-        //     600:{
-        //         items:3,
-        //         nav:false
-        //     },
-        //     1000:{
-        //         items:5,
-        //         nav:true,
-        //         loop:true,
-        //     }
-        // }
+        responsive:{
+            0:{
+                items:3,
+                nav:false,
+                dots:false,
+            },
+            769:{
+                items:8,
+                nav:false
+            },
+            
+        }
     });
   }
 }
@@ -159,21 +151,18 @@ const owlBottomBanner = {
         // autoplayTimeout:5000,
         // autoplayHoverPause:true,
         // responsiveClass:true,
-        // responsive:{
-        //     0:{
-        //         items:1,
-        //         nav:true
-        //     },
-        //     600:{
-        //         items:3,
-        //         nav:false
-        //     },
-        //     1000:{
-        //         items:5,
-        //         nav:true,
-        //         loop:true,
-        //     }
-        // }
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                dots:false,
+            },
+            769:{
+                items:4,
+                nav:true
+            },
+         
+        }
     });
   }
 }

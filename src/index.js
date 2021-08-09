@@ -4,6 +4,18 @@
 // import 'owl.carousel';
 import $ from "jquery";
 import 'owl.carousel';
+// import moment from 'moment';
+// const end = moment().endOf('day'); 
+
+// setInterval(function() {
+//   const timeLeft = moment(end.diff(moment())); // get difference between now and timestamp
+//   const formatted = timeLeft.format('HH:mm:ss'); // make pretty
+
+//   console.log(formatted); // or do your jQuery stuff here
+// }, 1000);
+
+
+
 
 
 const owlTopBanner = {
@@ -76,7 +88,7 @@ const owlMidBanner = {
         responsive:{
             0:{
                 items:2,
-                nav:true,
+                nav:false,
                 dots:true,
             },
             768:{

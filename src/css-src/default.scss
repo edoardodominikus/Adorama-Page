@@ -88,7 +88,108 @@ $extra-large-screens: 1201px;
                }
            }
        }
+       .perks{
+           display: flex;
+           flex-direction: column;
+           max-width: none;
+           .item_perks{
+               overflow: hidden;
+               padding: 0 15px;
+               .text_wrap_perks{
+                h3{
+                    font-size: 21px;
+                    font-weight: 400;
+                  }
+                  p{
+                    font-size: 13px;
+                    line-height: 1.5;
+                  }
+                  
+               }
+               
+           }
+       }
+       .news_reviews{
+          .hero-item-list
+          {
+              .item-background{
+                  width: 252px;
+              } 
+          }
+       }
+        
+
    }
+   .company-motto h1, .company-motto h2{
+       font-size: 20px;
+   }
+   .footer .footer-promo{
+       padding:20px 45px;
+       font-size: 14px;
+       line-height: 1.5;
+   }
+   .footer .footer-connect .footer-size a{
+       font-size: 14px;
+   }
+   .footer .footer-contact {
+       display: flex;
+       flex-direction: column-reverse;
+       .connect{
+           display: flex;
+           flex-direction: column-reverse;
+       }
+       .blog{
+       display: none;
+        }
+        
+   }
+   .footer .footer-explore{
+       padding: 0 11px;
+   }
+   .footer .footer-explore .footer-size .explore-links{
+       display: flex;
+        flex-direction: column;
+        text-align: center;
+        h4{
+            font-size: 16px;
+            margin: 10px 0; 
+        }
+        a{
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-bottom: 5px;
+        }
+    }
+    .footer .footer-explore .footer-size .visit{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        img{
+            vertical-align: baseline;
+            max-width: 100%;
+            min-width: 100px;
+        }
+        .visit-info{
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            line-height: 1.5;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .footer .footer-explore .footer-size .observed img{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-height: 50px;
+    }
+    .footer .footer-about .footer-size{
+        padding: 15px;
+    }
 }
 
 

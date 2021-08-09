@@ -154,7 +154,7 @@ const owlBottomBanner = {
         responsive:{
             0:{
                 items:1,
-                nav:true,
+                nav:false,
                 dots:false,
             },
             769:{

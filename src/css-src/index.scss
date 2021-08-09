@@ -218,6 +218,12 @@ $gray: #757575;
         .account{
           display: flex;
             flex-direction: row;
+            .icon--phone{
+              display: none;
+          }  
+          .icon--arrow-down-small{
+            display: none;
+        }
           .dropdown{
             display: flex;
             flex-direction: row;
@@ -309,6 +315,52 @@ $gray: #757575;
     border-top: 1px solid lightgray;
     border-style: groove;
    
+    .desktop_form{
+      display: none;
+      padding: 5px 5px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 505px;
+      height: 32px;
+          .search_bar{
+            width: 100%;
+            position: relative;
+            align-self: flex-end;
+            .search_input{
+              border: 1px solid;
+              border-radius: 60px;
+              width: 100%;
+              height: 26px;
+              line-height: normal;
+              justify-content: center;
+              align-items: center;
+          }
+          .submit_button{
+            width: 18px;
+            height: 18px;
+            box-shadow: none;
+            position: absolute;
+            right: 12px;
+            top: 4px;
+            align-items: center;
+              .icon--magnifier {
+                stroke: none;
+                color: $dark-blue;
+                width: 18px;
+                height: 18px;          
+                fill:currentColor;
+                background-color: white;
+            }
+          }      
+        }
+        ::placeholder{
+          padding: 10px;
+          font-size: 14px;
+          opacity: 0.5;
+        }
+        
+    }
     height: 35px;
     .navbar-bottom-size{
       max-width: 1400px;
@@ -359,6 +411,9 @@ $gray: #757575;
   padding: 20px 0;
   margin-right: auto;
   margin-left: auto;
+  .owl-small{
+    display: none;
+  }
   .owl-dots{
     position: absolute;
     bottom: 0;
@@ -403,11 +458,11 @@ $gray: #757575;
 .promo_banner{
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1400px;
   //width: 72.5%;
   height: 400px;
- 
+  margin-bottom: 100px;
   .live_in_wild, .wedding_season{
     
     width: 50%;
@@ -440,6 +495,7 @@ $gray: #757575;
     height: calc(100%+50px);
     margin: 100px 0 0 0;
     padding-bottom: 50px;
+    padding-top: 50px;
     h1{
       font-size: 28px;
       padding: 25px 0;

@@ -4,8 +4,8 @@
 // import 'owl.carousel';
 import $ from "jquery";
 import 'owl.carousel';
-// import moment from 'moment';
-// const end = moment().endOf('day'); 
+import moment from 'moment';
+const end = moment().endOf('day'); 
 
 // setInterval(function() {
 //   const timeLeft = moment(end.diff(moment())); // get difference between now and timestamp

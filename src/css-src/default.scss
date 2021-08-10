@@ -58,6 +58,45 @@ $extra-large-screens: 1400px;
         }
         
     }
+    .mid .pre_owned{
+        .normal{
+            display: none;
+        }
+        .small{
+            display: block;
+        }
+    }
+    .deal{
+        flex-direction: column;
+        background: transparent linear-gradient(0deg,#e0e0e0,#fff);
+        .title-deal{
+            
+            padding: 20px 0;
+            white-space: nowrap;
+            h1{
+                font-size: 25px;
+                line-height: 43px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 3px;
+            }
+        }
+        .image-wrap-deal{
+            padding: 10px;
+            margin: 0;
+            width: 90%;
+            .deal-data{
+                .deal-title{
+                    a{
+                        font-size: 11px;
+                    }
+            }
+            }
+            
+        }
+    }
    .promo_banner{
        flex-direction: column;
        .live_in_wild, .wedding_season{
@@ -157,6 +196,9 @@ $extra-large-screens: 1400px;
            }
        }
        .news_reviews{
+           .title{
+               flex-direction: column;
+           }
           .hero-item-list
           {
               .item-background{

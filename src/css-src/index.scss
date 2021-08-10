@@ -457,7 +457,10 @@ $gray: #757575;
   max-width: 1400px;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
   .title-deal{
     display: flex;
     flex-direction: column;
@@ -470,6 +473,7 @@ $gray: #757575;
     }
     p{
       text-transform: uppercase;
+      white-space: nowrap;
       text-align: center;
       font-size: 14px;
       line-height: 25px;
@@ -479,10 +483,71 @@ $gray: #757575;
       margin-bottom: 5px;
     }
   }
-  .image-wrap-deal img{
-    width: auto;
-    max-height: 90px;
-    height: 90px;
+  .image-wrap-deal{
+    background-color: $white;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 30px;
+    margin: 10px 0;
+    img{
+      width: auto;
+      max-height: 90px;
+      height: 90px;
+    }
+    .deal-data{
+      display: flex;
+      flex-direction: column;
+      padding: 6px 10px;
+      
+      a{
+        font-size: 16px;
+        line-height: 22px;
+        color: #06c;
+        font-weight: 400;
+        margin: 0;
+        text-decoration: none;
+      }
+      .button-deal{
+        width: 86px;
+        height: 25px;
+        font-size: 13px;
+        line-height: 5px;
+        margin: 2px 0 0;
+        font-weight: 400;
+        background-color: #0060bf;
+        text-transform: none;
+        border-radius: 4px;
+        color:$white;
+      }
+    }
+  }
+  .countdown{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 14px;
+    #hours,#minutes,#seconds{
+      border-radius: 9px;
+      width: 68px;
+      height: 60px;
+      font-size: 21px;
+      line-height: 59px;
+      color: #222;
+      align-items: center;
+      justify-content: center;
+      background: transparent linear-gradient(0deg,#fff,#fff 49%,#e8e8e8)
+    }
+    span{
+      padding: 20px 5px 0 5px;
+    }
+    .box-clock{
+      p{
+        text-transform: uppercase;
+      }
+    }
+   
   }
 }
 
@@ -584,6 +649,9 @@ $gray: #757575;
     margin: 0 auto;
     img{
       width: 100%;
+    }
+    .small{
+      display: none;
     }
   }
   .sale{

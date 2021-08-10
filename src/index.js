@@ -7,12 +7,59 @@ import 'owl.carousel';
 import moment from 'moment';
 const end = moment().endOf('day'); 
 
-// setInterval(function() {
-//   const timeLeft = moment(end.diff(moment())); // get difference between now and timestamp
-//   const formatted = timeLeft.format('HH:mm:ss'); // make pretty
 
-//   console.log(formatted); // or do your jQuery stuff here
-// }, 1000);
+function isEmpty(obj) {
+  for(var key in obj) {
+      if(obj.hasOwnProperty(key))
+          return false;
+  }
+  return true;
+}
+
+if(!isEmpty(localStorage.getItem('data')))
+{
+  var index = JSON.parse(localStorage.getItem('data'));
+}
+else{
+  var index = 0;
+}
+
+setInterval(function() {
+  const timeLeft = moment.duration(end.diff(moment())); 
+  //console.log(timeLeft);
+  const hours = timeLeft.hours();
+  const minutes = timeLeft.minutes();
+  const seconds = timeLeft.seconds();
+  let title=[
+    '<a href="">Rokinon 2 Lens Bundle for Sony E-Mount with 24mm, 75mm Lenses</a> ',
+    '<a href="">Canon EOS R Full-Frame Mirrorless Digital Camera</a>',
+    '<a href="">Canon EOS M50 Mark II Mirrorless Camera Body, Black</a>'
+  ];
+  let img=[
+    '<img src="./img/deal-of-the-day/rokinon_242875.jpg" alt="">',
+    '<img src="./img/deal-of-the-day/canon_r.jpg" alt="">',
+    '<img src="./img/deal-of-the-day/canon_50mm.jpg" alt="">'
+  ]
+  $('#hours').html(hours);
+  $('#minutes').html(minutes);
+  $('#seconds').html(seconds);
+  $('.img-deal').html(img[index]);
+  $('.deal-title').html(title[index]);
+ 
+  if(seconds==0)
+   {
+     if(index==2)
+    {
+      index = 0;
+    }
+    else{
+      index++;
+    }
+     localStorage.setItem('data',JSON.stringify(index));
+
+   } 
+  
+}, 1000);
 
 
 

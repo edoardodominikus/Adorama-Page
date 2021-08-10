@@ -139,8 +139,10 @@ const owlMidBanner = {
                 dots:true,
             },
             768:{
-                item: 5,
-            }
+                items: 4,
+                dots: true,
+            },
+            
         }
     });
   }
@@ -174,10 +176,11 @@ const owlBrandBanner = {
             0:{
                 items:3,
                 nav:false,
-                dots:false,
+                dots:true,
+                
             },
             769:{
-                items:8,
+                items:5,
                 nav:false
             },
             
@@ -212,12 +215,12 @@ const owlBottomBanner = {
         // responsiveClass:true,
         responsive:{
             0:{
-                items:1,
-                nav:false,
+                items:2,
+                nav:true,
                 dots:false,
             },
             769:{
-                items:4,
+                items:3,
                 nav:true
             },
          

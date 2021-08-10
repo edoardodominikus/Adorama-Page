@@ -485,7 +485,7 @@ $gray: #757575;
   }
   .image-wrap-deal{
     background-color: $white;
-    width: 70%;
+    height: 114px;
     display: flex;
     flex-direction: row;
     padding: 15px 30px;
@@ -909,7 +909,7 @@ $gray: #757575;
       .item-background
       {
         background-color: white;
-        width: 170px;
+        width: auto;
         height: 170px;
         justify-content: center;
         align-items: center;
@@ -1004,7 +1004,7 @@ $gray: #757575;
       {
         background-color: white;
         width: 340px;
-        
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         
@@ -1102,7 +1102,7 @@ $gray: #757575;
       {
         background-color: white;
         width: 340px;
-        
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         

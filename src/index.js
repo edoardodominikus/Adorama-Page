@@ -142,6 +142,12 @@ const owlMidBanner = {
                 items: 4,
                 dots: true,
             },
+            1025:{
+              items: 5,
+            },
+            1200:{
+              items:7,
+            }
             
         }
     });
@@ -218,6 +224,10 @@ const owlBottomBanner = {
                 items:2,
                 nav:true,
                 dots:false,
+                margin: 250,
+            },
+            545:{
+                margin: 10,
             },
             769:{
                 items:3,

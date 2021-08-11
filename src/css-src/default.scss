@@ -78,6 +78,11 @@ $extra-large-screens: 1400px;
     .mid .video .hero-item-list button.owl-next{
         right: -6px;
     }
+    .mid .video .hero-item-list .item-new .new_text{
+        p{
+            font-size: 15px;
+        }
+    }
     .deal{
         flex-direction: column;
         background: transparent linear-gradient(0deg,#e0e0e0,#fff);
@@ -214,7 +219,7 @@ $extra-large-screens: 1400px;
           .hero-item-list
           {
               .item-background{
-                  width: 293px;
+                  width: 275px;
               } 
               button.owl-next{
                   right:-15px;
@@ -346,6 +351,22 @@ $extra-large-screens: 1400px;
     .mid{
         margin-top: 626px;
     }
+    
+    // .news_reviews{
+    //    .hero-item-list
+    //    {
+    //        .item-background{
+    //            width: 275px;
+    //        } 
+    //        button.owl-next{
+    //            right:-15px;
+    //        }
+    //        button.owl-prev{
+    //          left:-13px;
+    //      }
+    //    }
+
+
 }
 
 
@@ -411,7 +432,11 @@ $extra-large-screens: 1400px;
         }
     }
 }
-
+@media only screen and (min-width: $small-screens) and (max-width:$big-screens){
+    .mid .new_releases .hero-item-list .item-new .new_item_img, .mid .bestsellers .hero-item-list .item-new .new_item_img, .mid .justforyou .hero-item-list .item-new .new_item_img{
+        max-width: 55%;
+    }
+}
 @media only screen and (min-width: $big-screens) and (max-width:$extra-large-screens)
 {
     .mid .categories .grid a{

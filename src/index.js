@@ -189,7 +189,11 @@ const owlBrandBanner = {
                 items:5,
                 nav:false
             },
+            1026:{
+                items: 7,
+                dots:true,
             
+            }
         }
     });
   }
@@ -233,7 +237,10 @@ const owlBottomBanner = {
                 items:3,
                 nav:true
             },
-         
+            1200:{
+                items:4,
+                nav:true,
+            }
         }
     });
   }
